@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SimbaSafaris - Tours & Travel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luxury Safari tours across East Africa.">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>SimbaSafaris Tours & Travel</h1>
+    <p>Your adventure begins here</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#media">Gallery</a></li>
+        <li><a href="#registration">Sign up</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+    <!-- Destinations -->
+    <section id="destinations">
+        <h2>Top Travel Destinations</h2>
+        <ul>
+            <li>Ole Pejeta - A night of lights and romance</li>
+            <li>Lamu - Tropical beaches and lush jungles</li>
+            <li>Amboseli - A blend of tradition and innovation</li>
+            <li>Tsavo - Five star luxury under the stars</li>
+            <li>The Mara - Adventure and scenic beauty</li>
+        </ul>
+    </section>
+
+    <!-- Packages -->
+    <section id="packages">
+        <h2>Travel Packages & Pricing</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Package</th>
+                    <th>Duration</th>
+                    <th>Price</th>
+                    <th>Includes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Enchanting Tsavo</td>
+                    <td>5 Days</td>
+                    <td>$1,200</td>
+                    <td>Hotel, Camping, Tours</td>
+                </tr>
+                <tr>
+                    <td>Mara Escape</td>
+                    <td>7 Days</td>
+                    <td>$1,500</td>
+                    <td>Resort, Spa, Glamping</td>
+                </tr>
+                <tr>
+                    <td>Amboseli Explorer</td>
+                    <td>6 Days</td>
+                    <td>$1,800</td>
+                    <td>Accommodation, Transport, Guide</td>
+                </tr>
+                <tr>
+                    <td>The Coastal Break</td>
+                    <td>4 Days</td>
+                    <td>$900</td>
+                    <td>Hotel, Spa, Snorkeling</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Media -->
+    <section id="media">
+        <h2>Gallery & Highlights</h2>
+        <article id="art1">
+            <h3>Stunning Views from The Mara</h3>
+            <img src="wildlife_01.jpg" alt="wildlife at a river crossing" id="i1">
+        </article>
+
+        <article id="art2">
+            <h3>Awesome Sights at The Mara</h3>
+            <img src="wildlife_02.jpg" alt="wildlife crossing a river" id="i2">
+        </article>
+
+        <article>
+            <h3>Highlights from Our Tsavo Tour</h3>
+            <video controls>
+                <source src="RiverCrossing.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </article>
+    </section>
+
+    <!-- Registration -->
+    <section id="registration">
+        <h2>Register to join the SimbaSafaris family</h2>
+        <form action="/submit" method="POST">
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password *</label>
+            <input type="password" id="password" name="password" required minlength="8">
+
+            <label for="dob">Date of Birth *</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="age">Age (18–99) *</label>
+            <input type="number" id="age" name="age" min="18" max="99" required>
+
+            <label for="gender">Gender *</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+                <option value="preferNot">Prefer not to say</option>
+            </select>
+
+            <label for="bio">Short Bio</label>
+            <textarea id="bio" name="bio" rows="4"></textarea>
+
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" value="Kenya" readonly>
+
+            <div class="agreement">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the <a href="#">terms and conditions</a> *</label>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <ul>
+            <li>Email: <a href="mailto:info@simbasafaris.com">info@simbasafaris.com</a></li>
+            <li>Phone: +254 (722) 000 000</li>
+            <li>Address: 123 Adventure Lane, Nairobi, Kenya</li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>© 2024 Web Masters | <a href="#">Simba Safaris</a></p>
+</footer>
+
+</body>
+</html>
